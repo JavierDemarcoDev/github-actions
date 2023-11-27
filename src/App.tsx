@@ -1,6 +1,6 @@
 import Accordion from './components/Accordion/Accordion';
 
-function App(hil) {
+function App() {
   return (
     <div>
       <Accordion title="Más información">
