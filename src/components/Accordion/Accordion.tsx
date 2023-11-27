@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 
-import './Accordion.Module.css';
+import './Accordion.module.css';
 
 function Accordion({
   title,
