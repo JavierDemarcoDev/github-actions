@@ -17,22 +17,28 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: |
+          rm -rf node_modules
+          rm package-lock.json
+          npm install --no-audit --no-fund --no-optional
 
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: |
+          rm -rf node_modules
+          rm package-lock.json
+          npm install --no-audit --no-fund --no-optional
 
       - uses: actions/setup-node@v2
         with:
           node-version: '18.x'
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
-
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: |
+          rm -rf node_modules
+          rm package-lock.json
+          npm install --no-audit --no-fund --no-optional
 
       - name: Lint
         run: npm run lint
