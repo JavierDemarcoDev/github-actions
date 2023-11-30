@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install --no-audit --no-fund --no-optional
+          npm install
 
       - name: Run Lint
         run: npm run lint
